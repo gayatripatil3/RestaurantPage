@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="11_2_Restaurant.css">
+</head>
+<body>
+    <div class="container1">
+        <nav>
+            <div class="nav_outer_div">
+                <div class="nav_para_content">
+                    <h2>Our Menu <div class="hor"> <hr></div></h2>
+                </div>
+               
+                <div class="nav_items" id="nav_items_id">
+                    <!-- <a href="" class="nav_items_class" id="item1">All</a>
+                    <a href="" class="nav_items_class" id="item1">Breakfast</a>
+                    <a href="" class="nav_items_class" id="item1">Lunch</a>
+                    <a href="" class="nav_items_class" id="item1">Shakes</a>
+                    <a href="" class="nav_items_class" id="item1">Dinner</a> -->
+                </div>
+            </div>
+        </nav>
+        <div class="body_outer_div">
+           <div class="card_row">
+                <div class="card">
+                    <div class="card_photo" id="card_photo_id1">
+                    </div>
+                    <div class="card_content">
+                        <div class="card_title" id="car_title_id1"><div class="title_content"><p>Buttermilk Pancake</p><p>$15.99</p></div><div class="hor1"><hr></div></div>
+                        <div class="card_content1"><p>Lorem ipsum dolor sit amet consectetur adipg elit. Eveniet, quidem!</p></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_photo" id="card_photo_id2">
+                    </div>
+                    <div class="card_content">
+                        <div class="card_title" id="car_title_id2"><div class="title_content"><p>Dinner Double</p><p>$13.99</p></div><div class="hor1"><hr></div> </div>
+                        <div class="card_content1"><p>Lorem, ipsum dolor sit amet consectetur adiing elit. Iure, assumenda!</p></div>
+                    </div>
+                </div>
+           </div>
+           <div class="card_row">
+            <div class="card">
+                <div class="card_photo" id="card_photo_id3">
+                </div>
+                <div class="card_content">
+                    <div class="card_title" id="car_title_id3"><div class="title_content"><p>Dzilla Milkshake</p><p>$16.99</p></div><div class="hor2"><hr></div></div>
+                    <div class="card_content1">Lorem ipsum dolor sit amet, consectetur adipis elit. Architecto, nulla?</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_photo" id="card_photo_id4">
+                </div>
+                <div class="card_content">
+                    <div class="card_title" id="car_title_id4"><div class="title_content"><p>Country Delight</p><p>$20.99</p></div><div class="hor2"><hr></div></div>
+                    <div class="card_content1"><p>Lorem ipsum dolor sit, amet consectetur adipis elit. Reiciendis, earum.</p></div>
+                </div>
+            </div>
+           </div>
+        </div>
+    </div>
+    <script>
+        const arr=["All","Breakfast","Lunch","Shakes","Dinner"];
+        let len=arr.length;
+        var text1="";
+        for(let i=0;i<len;i++){
+            text1+="<a href='' class='nav_items_class'>"+arr[i]+"</a>";
+        }
+        document.getElementById("nav_items_id").innerHTML=text1;
+
+        const arr1=
+        [
+            "restaurant_img_1.jpg",
+            "restaurant_img_2.jpg",
+            "restaurant_img_3.jpg",
+            "restaurant_img_4.jpg",
+            "breakfast1.png",
+            "breakfast2.png",
+            "breakfast3.png",
+            "breakfast4.png",
+        ];
+        let len1=arr1.length;
+        let text2="";
+        for(let i=0,j=1;i<len1;i++,j++){
+            text2=`<img src='${arr1[i]}'>`;
+            document.getElementById(`card_photo_id${j}`).innerHTML=text2;   
+        }
+    
+    </script>
+</body>
+</html>

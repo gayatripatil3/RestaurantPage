@@ -1,0 +1,140 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container1{
+display: block;
+margin-top: 0.5% ;
+  margin-left: 1.5%;
+border: 2px solid rgb(255, 255, 255);
+border-bottom: 2px solid black;
+width:97%;
+background-color:rgb(229, 240, 248);
+}
+nav{
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+.nav_outer_div{
+    display: block;
+    /* border: 1px solid black; */
+    width:100%;
+    margin-bottom: 50px;
+}
+.nav_para_content{
+    display: block;
+    text-align: center;
+    color: rgb(5, 10, 91);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.hor{
+    /* border: 1px solid rgb(226, 10, 10); */
+    display: flex;
+    justify-content: center;
+}
+.hor hr{
+   display: flex;
+    height:2px;
+    background-color: rgb(243, 160, 17);
+    width: 4%;
+    border-radius: 20px;
+}
+.nav_items{
+    display: flex;
+    justify-content: center;
+}
+.nav_items_class{
+    margin: 1%;
+    border: 1.5px solid rgb(243, 160, 17);
+    padding: 0.5% 1%;
+    border-radius: 10px;
+    box-shadow: 2px 2px brown;
+}
+.nav_items a{
+    text-decoration: none;
+    color: rgb(161, 104, 5);
+    font-weight: bold;
+    font-size: small;
+} 
+.nav_items a:hover{
+    cursor: pointer;
+    background-color: rgb(129, 237, 122);
+    color:blueviolet;
+}
+.body_outer_div{
+    display: block;
+    padding:10px 35px 0px 35px;
+    
+}
+.card_row{
+    display: flex;
+    justify-content: center; 
+    margin-bottom:30px;
+}
+.card_photo img{
+    width:140px;
+    height:135px;
+    border-radius: 10px;
+    box-shadow: 1px 1px brown;
+}
+
+.card{
+    display: flex;
+    margin: 5px;
+    
+}
+.card_title{
+    font-weight: bold;
+    color: rgb(5, 5, 104);
+}
+.hor1 hr{
+    height:1.5px;
+    background-color: rgb(5, 5, 104);
+}
+.hor2 hr{
+    height:1px;
+    background-color: rgb(5, 5, 104);
+}
+.card_content{
+    display: block;
+    margin-left: 3%;
+}
+.card_content1{
+    margin-top: 3%;
+    font-size: small;
+    color: rgb(84, 84, 212);
+}
+.title_content{
+    display: flex;
+    justify-content: space-between;
+}
+.title_content p:nth-child(2){
+    color:rgb(212, 136, 6);
+    font-size: small;
+}
+
+
+@media only screen and (min-width:0px) and (max-width:799px){
+    .card_row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        margin-bottom:10px;
+    }
+    .card{
+        display: flex;
+        margin: 15px;
+    }
+    .container1{
+        display: block;
+        margin-top: 0.5% ;
+        margin-left: 1.5%;
+        border: 2px solid rgb(255, 255, 255);
+        width:100%;
+        background-color:rgb(229, 240, 248);
+        }
+}
+
+
+
